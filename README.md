@@ -1,6 +1,7 @@
 # pyspark
-# @author: Shreya Agrawal
-# @date: 31st Jan 2019
+
+@author: Shreya Agrawal
+@date: 31st Jan 2019
 
 Functionalities included in this repository: 
 

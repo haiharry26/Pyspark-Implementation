@@ -19,18 +19,21 @@ Installing Pyspark on Windows:
 
 7. 	Set the following path variables:
 	
-	SPARK_HOME C:\Users\agrashre\spark
+	SPARK_HOME=C:\Users\agrashre\spark
 
-    JAVA_HOME C:\Users\agrashre\java
+    JAVA_HOME=C:\Users\agrashre\java
 
-    HADOOP HOME C:\Users\agrashre\winutils
+    HADOOP_HOME=C:\Users\agrashre\winutils
 
 	
 	
-Some usefule pointers:
+Some useful pointers:
+
 1.	After this, spark is installed on your local computer. It is possible that you may not have installed pyspark module explicitly.
 	However when you spark-submit your code, it will be autodetected.
+
 2. 	Ensure that there are no spaces in path variables. Spark has some issues if that happens.
+
 3. 	If you are unable to change your system variables or do not want to mess with them, then you can create a .bat file as I have 
 	and run it before every spark-submit execution cycle.
 
