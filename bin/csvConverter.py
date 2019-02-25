@@ -16,7 +16,7 @@ LOG = logging.getLogger('loggerAvro')
 class converter():
     
     def __init__(self):
-        self.property_file_name = "../config/config.ini"
+        self.property_file_name = "../conf/config.ini"
         self.section_name = "DEFAULT"
         self.csv_file_name = None
         self.avro_location = None

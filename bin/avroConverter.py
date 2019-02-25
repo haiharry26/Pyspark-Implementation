@@ -20,7 +20,7 @@ LOG = logging.getLogger('loggerAvro')
 class converter():
     
     def __init__(self):
-        self.property_file_name = "../config/config.ini"
+        self.property_file_name = "../conf/config.ini"
         self.section_name = "DEFAULT"
         self.avro_location = None
         self.spark_df = None
@@ -35,6 +35,7 @@ class converter():
         LOG.info('Properties loaded in class variables.')
 
         self.avro_location = config.get(self.section_name, "AVRO_LOCATION")
+        self.serialised_pandas_df_location = config.get(self.section_name, "SERIALISED_PANDAS_DF_LOCATION")
     
     def avro_reader(self, spark):
         LOG.info('Reading avro file from: %s', self.avro_location)
@@ -52,7 +53,7 @@ class converter():
         LOG.info('Pandas Dataframe created.')
         
         LOG.info('Serialising the pandas dataframe to use later.')
-        self.df.to_pickle('../data/data.pkl')
+        self.df.to_pickle(self.serialised_pandas_df_location)
         LOG.info('Pndas Dataframe serialised successfully as ../data/data.pkl')
         
         
@@ -66,7 +67,7 @@ class converter():
         LOG.info('Read avro successfully.')
         
         LOG.info('Convert avro to Pandas dataframe: ')
-        self.to_pandas_df()
+        self.to_pandas_df(spark)
         LOG.info('Pandas Dataframe published.')
         
         LOG.info('Returning from avro converter.')
