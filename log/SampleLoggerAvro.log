@@ -1,0 +1,36 @@
+2019-02-25 10:08:27,996 - loggerAvro - INFO - Code execution started. In main:
+2019-02-25 10:08:27,996 - loggerAvro - INFO - Initiating Spark.
+2019-02-25 10:08:30,989 - loggerAvro - INFO - Spark Initialised. 
+2019-02-25 10:08:30,990 - loggerAvro - INFO - Converting csv to avro:
+2019-02-25 10:08:30,990 - loggerAvro - INFO - Reading properties from config: 
+2019-02-25 10:08:30,990 - loggerAvro - INFO - Initialising config reader for CSV to AVRO: 
+2019-02-25 10:08:30,990 - loggerAvro - INFO - Reading properties from config file: ../conf/config.ini
+2019-02-25 10:08:30,998 - loggerAvro - INFO - Properties loaded in class variables.
+2019-02-25 10:08:30,999 - loggerAvro - INFO - Converting csv to avro:
+2019-02-25 10:08:30,999 - loggerAvro - INFO - Reading csv file from: ../data/sample_data.csv
+2019-02-25 10:08:30,999 - loggerAvro - INFO - File format: com.databricks.spark.csv
+2019-02-25 10:08:34,284 - loggerAvro - INFO - Spark dataframe created.
+2019-02-25 10:08:34,284 - loggerAvro - INFO - Showing top 5 rows of dataframe: 
+2019-02-25 10:08:35,210 - loggerAvro - INFO - None
+2019-02-25 10:08:35,210 - loggerAvro - INFO - Showing schema of the dataframe:
+2019-02-25 10:08:35,222 - loggerAvro - INFO - None
+2019-02-25 10:08:35,222 - loggerAvro - INFO - Creating avro from dataframe.
+2019-02-25 10:08:35,222 - loggerAvro - INFO - File format: com.databricks.spark.avro
+2019-02-25 10:08:35,920 - loggerAvro - INFO - Avro created.
+2019-02-25 10:08:35,921 - loggerAvro - INFO - Avro published. Returning from csv to avro.
+2019-02-25 10:08:35,921 - loggerAvro - INFO - Reading properties:
+2019-02-25 10:08:35,921 - loggerAvro - INFO - Initialising config reader for AVRO to pandas dataframe: 
+2019-02-25 10:08:35,921 - loggerAvro - INFO - Reading properties from config file: ../conf/config.ini
+2019-02-25 10:08:35,923 - loggerAvro - INFO - Properties loaded in class variables.
+2019-02-25 10:08:35,923 - loggerAvro - INFO - Read avro to a spark dataframe: 
+2019-02-25 10:08:35,923 - loggerAvro - INFO - Reading avro file from: ../data/avro/
+2019-02-25 10:08:35,923 - loggerAvro - INFO - File format: com.databricks.spark.avro
+2019-02-25 10:08:35,974 - loggerAvro - INFO - Spark dataframe created.
+2019-02-25 10:08:35,974 - loggerAvro - INFO - Read avro successfully.
+2019-02-25 10:08:35,975 - loggerAvro - INFO - Convert avro to Pandas dataframe: 
+2019-02-25 10:08:35,975 - loggerAvro - INFO - Converting spark dataframe to panda dataframe:
+2019-02-25 10:08:37,386 - loggerAvro - INFO - Pandas Dataframe created.
+2019-02-25 10:08:37,387 - loggerAvro - INFO - Serialising the pandas dataframe to use later.
+2019-02-25 10:08:37,469 - loggerAvro - INFO - Pndas Dataframe serialised successfully as ../data/data.pkl
+2019-02-25 10:08:37,470 - loggerAvro - INFO - Pandas Dataframe published.
+2019-02-25 10:08:37,470 - loggerAvro - INFO - Returning from avro converter.
