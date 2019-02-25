@@ -16,8 +16,12 @@ Installing Pyspark on Windows:
 5. 	create folder C:\Users\agrashre\tmp\hive
 
 6. 	Put DataBricks jar in spark\jar (if you want to use csv/avro)
+	To use avro format, you will need version spark-avro_2.11-4.0.0 or greater.
+	https://mvnrepository.com/artifact/com.databricks/spark-avro_2.11/4.0.0
+	
 
-7. 	Set the following path variables:
+7. 	Set the following path variables: 
+	(Change this a/c to your installation locations.)
 	
 	SPARK_HOME=C:\Users\agrashre\spark
 
